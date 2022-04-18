@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo list</title>
+  </head>
+  <body>
+    <main class="main container">
+      <h1 class="main_title">Todo list</h1>
+      <form class="form">
+        <input type="text" placeholder="dataAdd..." class="form_input" />
+        <button type="submit">Submit</button>
+      </form>
+      <div class="deleteAndSelectBtns">
+        <div class="btnDelete">
+          <button
+            class="selectAll"
+            onclick="selectAll()"
+            title="Barchasini tanlash !"
+          >
+            selectAll
+          </button>
+          <button
+            class="deleteSelect"
+            onclick="deleteSelect()"
+            title="Barcha tanlanganlarni o`chirirsh!"
+          >
+            deltSelc
+          </button>
+        </div>
+      </div>
+      <ul class="list"></ul>
+      <template class="template">
+        <li class="list_item">
+          <span>
+            <span class="idUser">1</span>
+            <input type="checkbox" class="checkbox" />
+          </span>
+          <span class="list_subtitle">Lorem ipsum dolor sit.</span>
+          <button
+            class="deleteBtn"
+            title="Buni bossang shu qator o`chib ketadi !!!"
+          >
+            X
+          </button>
+        </li>
+      </template>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
