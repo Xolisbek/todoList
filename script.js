@@ -107,6 +107,7 @@ function selectAll() {
 }
 // barcha tanlangan elementlarni o`chirish
 function deleteSelect(index = 0) {
+  // 1-usul:
   for (let i = index; i < dataArr.length; i++) {
     if (dataArr[i].isCompleted) {
       dataArr.splice(i, 1);
@@ -115,5 +116,11 @@ function deleteSelect(index = 0) {
       ); /* splice da elementlarning indexlari bir surilganda xatoni oldini olish uchun,tekshiruv qaysi index ga kelgan bo`lsa shundan boshlash uchun funksiyani qayta chaqiramiz  */
     }
   }
+
+  // 2-:usul
+  // dataArr = dataArr.filter((elem) => {
+  //   return !elem.isCompleted; /* isCompletedi, true bo`lganlarni o`chirish kerak edi,biz false larni tanlab olib dataArr ga massiv qilib o`zlashtirib qo`ydik,ikkalsi ham bir hil ish ! */
+  // });
+
   renderDataArr(dataArr, elList);
 }
