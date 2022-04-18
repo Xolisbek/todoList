@@ -11,8 +11,6 @@ if (window.localStorage.getItem("dataArr") != null) {
   jsonDataArr = window.localStorage.getItem("dataArr");
   dataArr = JSON.parse(jsonDataArr);
   renderDataArr(dataArr, elList);
-  // console.log(dataArr);
-  // window.localStorage.clear(); // local storage dagi ma`lumotlarning barini o`chirish
 }
 // elementlarni bittalab o`chirish funksiyasi
 function deleteElem(index) {
